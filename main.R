@@ -180,6 +180,7 @@ score.gg
 # probability
 prob.gg <- ggplot(filter(prob_win,prob>=0.01),aes(y=reorder(team,prob),x=prob,col=team)) +
   geom_lollipop(horizontal = TRUE,size=1.1) +
+  geom_label(aes(x=prob+0.005,label=paste0(round(prob*100),"%"))) +
   scale_x_continuous(breaks=seq(0,1,0.05),
                      labels=seq(0,1,0.05)*100) + 
   labs(title = "Most Likely Winner of the 2018 FIFA World Cup",
@@ -237,13 +238,14 @@ if(!isTRUE(use_results)){
   plot_elliott(prob.gg,
                sprintf("output/graphics/%s-probability-PM.png",RUN_DATE),
                700,1200,unit='px',res=170)
+  
+  # round probability graph
   plot_elliott(roundprob.gg,
                sprintf("output/graphics/%s-team-round-probability-PM.png",RUN_DATE),
                1600,2000,unit='px',res=180)
 }
 
  # probability over time graph
-# probabilities odds over time 
 sims <- vector('list',length(dir("output/probs/")))
 
 for(i in 1:length(dir("output/probs/"))){
@@ -280,4 +282,5 @@ overtime.gg
 plot_elliott(overtime.gg,
              "output/graphics/probability_overtime.png",
              700,1200,unit='px',res=170)
+
 #}# endloop ------
