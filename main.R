@@ -16,7 +16,7 @@ use_results <- T # whether or not to use real results when predicting outcome
 #RUN_DATE <- "2018-06-15" 
 RUN_DATE <- Sys.Date() 
 
-#for(DATE in as.character(seq.Date(ymd("2018-06-13"),ymd("2018-06-17"),"day"))){RUN_DATE <- DATE
+#for(DATE in as.character(seq.Date(ymd("2018-06-18"),ymd("2018-06-19"),"day"))){RUN_DATE <- DATE
 
 print(sprintf("RUNNING FOR: %s",RUN_DATE))
 
