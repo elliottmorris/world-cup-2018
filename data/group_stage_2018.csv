@@ -1,0 +1,49 @@
+team1,team2,date,stage,goals1,goals2,played
+Russia,Saudi Arabia,6/14/18,1,5,1,1
+Egypt,Uruguay,6/15/18,1,0,1,1
+Morocco,Iran,6/15/18,1,0,1,1
+Portugal,Spain,6/15/18,1,3,3,1
+France,Australia,6/16/18,1,2,1,1
+Argentina,Iceland,6/16/18,1,1,1,1
+Peru,Denmark,6/16/18,1,0,1,1
+Croatia,Nigeria,6/16/18,1,2,0,1
+Costa Rica,Serbia,6/17/18,1,0,1,1
+Germany,Mexico,6/17/18,1,0,1,1
+Brazil,Switzerland,6/17/18,1,1,1,1
+Sweden,South Korea,6/18/18,1,1,0,1
+Belgium,Panama,6/18/18,1,3,0,0
+Tunisia,England,6/18/18,1,1,2,0
+Colombia,Japan,6/19/18,1,NA,NA,0
+Poland,Senegal,6/19/18,1,NA,NA,0
+Russia,Egypt,6/19/18,2,NA,NA,0
+Portugal,Morocco,6/20/18,2,NA,NA,0
+Uruguay,Saudi Arabia,6/20/18,2,NA,NA,0
+Iran,Spain,6/20/18,2,NA,NA,0
+Denmark,Australia,6/21/18,2,NA,NA,0
+France,Peru,6/21/18,2,NA,NA,0
+Argentina,Croatia,6/21/18,2,NA,NA,0
+Brazil,Costa Rica,6/22/18,2,NA,NA,0
+Nigeria,Iceland,6/22/18,2,NA,NA,0
+Serbia,Switzerland,6/22/18,2,NA,NA,0
+Belgium,Tunisia,6/23/18,2,NA,NA,0
+South Korea,Mexico,6/23/18,2,NA,NA,0
+Germany,Sweden,6/23/18,2,NA,NA,0
+England,Panama,6/24/18,2,NA,NA,0
+Japan,Senegal,6/24/18,2,NA,NA,0
+Poland,Colombia,6/24/18,2,NA,NA,0
+Saudi Arabia,Egypt,6/25/18,3,NA,NA,0
+Uruguay,Russia,6/25/18,3,NA,NA,0
+Iran,Portugal,6/25/18,3,NA,NA,0
+Spain,Morocco,6/25/18,3,NA,NA,0
+Australia,Peru,6/26/18,3,NA,NA,0
+Denmark,France,6/26/18,3,NA,NA,0
+Nigeria,Argentina,6/26/18,3,NA,NA,0
+Iceland,Croatia,6/26/18,3,NA,NA,0
+Mexico,Sweden,6/27/18,3,NA,NA,0
+South Korea,Germany,6/27/18,3,NA,NA,0
+Serbia,Brazil,6/27/18,3,NA,NA,0
+Switzerland,Costa Rica,6/27/18,3,NA,NA,0
+England,Belgium,6/28/18,3,NA,NA,0
+Senegal,Colombia,6/28/18,3,NA,NA,0
+Panama,Tunisia,6/28/18,3,NA,NA,0
+Japan,Poland,6/28/18,3,NA,NA,0

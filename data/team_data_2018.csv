@@ -1,0 +1,33 @@
+number,name,group,elo
+1,Egypt,A,1646
+2,Russia,A,1685
+3,Saudi Arabia,A,1582
+4,Uruguay,A,1890
+5,Iran,B,1793
+6,Morocco,B,1711
+7,Portugal,B,1975
+8,Spain,B,2048
+9,Australia,C,1714
+10,Denmark,C,1843
+11,France,C,1984
+12,Peru,C,1906
+13,Argentina,D,1985
+14,Croatia,D,1853
+15,Iceland,D,1787
+16,Nigeria,D,1699
+17,Brazil,E,2131
+18,Costa Rica,E,1745
+19,Switzerland,E,1879
+20,Serbia,E,1770
+21,Germany,F,2092
+22,South Korea,F,1746
+23,Mexico,F,1859
+24,Sweden,F,1796
+25,Belgium,G,1931
+26,England,G,1941
+27,Panama,G,1669
+28,Tunisia,G,1649
+29,Colombia,H,1935
+30,Japan,H,1693
+31,Poland,H,1831
+32,Senegal,H,1747

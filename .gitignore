@@ -1,0 +1,16 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# RStudio files
+.Rproj.user/**
+
+# Rproject file
+*.Rproj
+
+
+# github updating file
+update_github.R
