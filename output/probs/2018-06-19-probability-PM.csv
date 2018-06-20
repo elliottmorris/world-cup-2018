@@ -1,32 +1,30 @@
 "team","prob"
-"Brazil",0.2583
-"Spain",0.1305
-"France",0.0881
-"Germany",0.0806
-"Portugal",0.0714
-"Belgium",0.0582
-"Argentina",0.0561
-"England",0.0553
+"Brazil",0.2645
+"Spain",0.1235
+"Germany",0.0881
+"France",0.086
+"Portugal",0.0642
+"Argentina",0.0569
+"Belgium",0.0549
+"England",0.0541
+"Mexico",0.031
 "Uruguay",0.0306
-"Switzerland",0.026
-"Mexico",0.0246
-"Denmark",0.0243
-"Croatia",0.0216
-"Colombia",0.0139
-"Peru",0.0103
-"Iran",0.0096
-"Serbia",0.0079
-"Sweden",0.0077
-"Senegal",0.0055
-"Iceland",0.0043
-"Japan",0.004
-"Poland",0.0036
-"Russia",0.0032
+"Denmark",0.0282
+"Switzerland",0.025
+"Croatia",0.0197
+"Colombia",0.0138
+"Peru",0.0108
+"Iran",0.0092
+"Senegal",0.0071
+"Sweden",0.0068
+"Serbia",0.0055
+"Russia",0.005
+"Iceland",0.0049
+"Japan",0.0038
+"Poland",0.0034
 "Australia",0.0017
-"Morocco",0.0007
-"Tunisia",0.0005
-"Egypt",0.0004
-"Nigeria",0.0004
-"South Korea",0.0003
-"Saudi Arabia",0.0002
-"Costa Rica",0.0002
+"Costa Rica",0.0007
+"Morocco",0.0002
+"Tunisia",0.0002
+"Nigeria",0.0001
+"South Korea",0.0001

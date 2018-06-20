@@ -203,19 +203,23 @@ prob_round <- prob_round %>%
   arrange(round,desc(prob)) %>%
   mutate(prob_order = ifelse(round!="Win Final",0,prob))
 
-roundprob.gg <-ggplot(prob_round,aes(y=round,x=prob,col=team)) +
+roundprob.gg <- ggplot(prob_round,aes(y=round,x=prob,col=team)) +
   geom_lollipop(horizontal = TRUE,size=1.1) +
-  geom_label(aes(x=prob+10,label=paste0(ifelse(prob<1,"<1",prob),"%"))) +
+  geom_label(aes(x=prob+10,label=paste0(case_when(prob<1~"<1",
+                                                  prob>99~">99",
+                                                  TRUE ~ as.character(prob)),"%"))) +
   facet_wrap(~team) +
   scale_x_continuous(breaks=seq(0,100,20),
                      labels=seq(0,100,20)) + 
-  labs(title = "World Cup 2018: How Far Will Your Team Make It?",
+  labs(title = "2018 FIFA World Cup: How Far Will Your Team Make It?",
        subtitle = "Forecasts generated from simulating the outcome of the international tournament 10,000 times.",
        x = "Probability (%)",
        y = "Stage") +
   theme_elliott()  +
   coord_cartesian(xlim=c(0,110)) +
   scale_color_teams
+
+roundprob.gg
 
 # saveing!
 if(!isTRUE(use_results)){
@@ -272,7 +276,7 @@ overtime.gg <- ggplot(filter(sims,team %in% leaders),
   scale_y_continuous(breaks=seq(0,1,0.1),
                      labels=seq(0,1,0.1)*100) + 
   scale_color_teams +
-  labs(title = "2018 World Cup Chances Over Time",
+  labs(title = "2018 FIFA World Cup Chances Over Time",
        subtitle = "How win pobabilities for the 2018 FIFA World Cup have changed since the start of the tournament\n(among today's top ten teams).",
        x = "Date",
        y = "Probability (%)")
