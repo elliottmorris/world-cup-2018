@@ -101,15 +101,15 @@ one_fun_match %>% filter(Agoals==Bgoals) %>% nrow() / nrow(one_fun_match)
 one_fun_match %>% filter(Agoals<Bgoals) %>% nrow() / nrow(one_fun_match)
 
  
-# play the group stage once ---------
+# play the group stage ---------
 # you have to do it in thirds
-group_sim <- sim_group_stage_2018(teams = team_data,
+group_sim.1 <- sim_group_stage_2018(teams = team_data,
                                   group_data = subset(group_stage_2018,stage==1),
                                   use_real_results = F)
 
 
 # who won the group stage?  
-group_sim_results <- find_group_winners(team_data,group_sim)
+group_sim_results <- find_group_winners(team_data,group_sim.1)
 
 
 # find winners of the knockout round -----------
@@ -143,6 +143,9 @@ system.time( # 17 seconds per hundred
                                    group_matches = group_stage_2018,
                                    use_real_results = use_results)
 )
+
+# save as rds just for re-use
+saveRDS(world_cup,file="output/world_cup_sim.RDS")
 
 # who is da winner?? -------------
 # most number of goals:
@@ -288,3 +291,5 @@ plot_elliott(overtime.gg,
              700,1200,unit='px',res=170)
 
 #}# endloop ------
+
+
