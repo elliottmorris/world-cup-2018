@@ -149,15 +149,15 @@ teams$points.1 <- NA
 teams[order(teams$number),]$points.1 <- group_results.1$goals[order(group_results.1$goals$number),]$points
 
 ## repeat for parts 2 ----------
-teams <- teams_remaining(teams,group_matches,stage_number = 2)
+teams.2 <- teams_remaining(teams,group_matches,stage_number = 2)
 
-group_matches.2 <- sim_group_stage_2018(teams = teams,
+group_matches.2 <- sim_group_stage_2018(teams = teams.2,
                                         group_data = subset(group_matches,stage==2),
                                         use_real_results = use_real_results)
 
 group_matches.2
 
-group_results.2 <- find_group_winners(teams = teams, 
+group_results.2 <- find_group_winners(teams = teams.2, 
                                       group_match_data = group_matches.2)
 
 
@@ -171,16 +171,18 @@ group_results.2$goals <- group_results.2$goals %>%
                                   goal_dif = goalsDifference,
                                   k_constant = 60))
 
-teams[order(teams$number),]$elo <- group_results.2$goals[order(group_results.2$goals$number),]$new_elo
+teams.2[order(teams.2$number),]$elo <- group_results.2$goals[order(group_results.2$goals$number),]$new_elo
 
-teams$lambda <- predict(mod,   # get new lambda with new elo
-                        newdata = select(teams,elo), 
+teams.2$lambda <- predict(mod,   # get new lambda with new elo
+                        newdata = select(teams.2,elo), 
                         type = "response")
 
 ### points 
-teams$points.2 <- NA
-teams[order(teams$number),]$points.2 <- group_results.2$goals[order(group_results.2$goals$number),]$points
+teams.2$points.2 <- NA
+teams.2[order(teams.2$number),]$points.2 <- group_results.2$goals[order(group_results.2$goals$number),]$points
 
+# append team 1
+teams.2 <- teams.2 %>% bind_rows(teams %>% filter(!name %in% teams.2$name))
 
 ### finally, part 3 --------
 teams <- teams_remaining(teams,group_matches,stage_number = 3)
